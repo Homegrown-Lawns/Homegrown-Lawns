@@ -3,200 +3,222 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Homegrown Lawns | Lawn Care Service in Sandy, UT</title>
-<link rel="stylesheet" href="style.css">
-</head>
+<title>Homegrown Lawns - Lawn Care Sandy UT</title>
 
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+body{line-height:1.6;color:#333;background:#f6f7f9;}
+
+header{
+display:flex;justify-content:space-between;align-items:center;
+padding:15px 40px;background:#1f5c2e;color:#fff;flex-wrap:wrap;
+}
+
+.logo{font-size:22px;font-weight:bold;}
+
+nav a{
+color:#fff;margin:0 12px;text-decoration:none;font-weight:500;
+}
+
+.btn{
+padding:10px 15px;border-radius:6px;text-decoration:none;color:#fff;margin-left:10px;
+}
+
+.call{background:#ff6b00;}
+.wa{background:#25D366;}
+
+.hero{
+background:url('https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1400&q=80');
+height:75vh;display:flex;flex-direction:column;justify-content:center;
+align-items:center;text-align:center;color:#fff;
+padding:20px;
+}
+
+.hero h1{font-size:45px;margin-bottom:15px;}
+.hero p{max-width:600px;font-size:18px;}
+.hero a{margin-top:20px;background:#25D366;padding:12px 20px;border-radius:6px;color:#fff;text-decoration:none;}
+
+section{padding:60px 40px;}
+
+h2{text-align:center;margin-bottom:30px;color:#1f5c2e;}
+
+.services{
+display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:#fff;padding:20px;border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.card img{width:100%;height:160px;object-fit:cover;border-radius:8px;margin-bottom:10px;}
+
+.reviews{
+display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.review{
+background:#fff;padding:20px;border-left:5px solid #1f5c2e;
+}
+
+.faq{
+max-width:800px;margin:auto;
+}
+
+.faq h3{margin-top:15px;color:#1f5c2e;}
+
+.contact{
+background:#fff;padding:40px;border-radius:10px;max-width:900px;margin:auto;
+}
+
+footer{
+background:#1f5c2e;color:#fff;text-align:center;padding:25px;margin-top:40px;
+}
+
+.map iframe{width:100%;height:300px;border:0;border-radius:10px;margin-top:15px;}
+</style>
+
+</head>
 <body>
 
-<!-- HEADER -->
 <header>
-    <div class="logo-area">
-        <img src="images/logo.jpg" alt="Homegrown Lawns Logo">
-        <h2>Homegrown Lawns</h2>
-    </div>
+<div class="logo">Homegrown Lawns</div>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#services">Services</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact Us</a>
-    </nav>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About Us</a>
+<a href="#services">Services</a>
+<a href="#blog">Blog</a>
+<a href="#contact">Contact</a>
+</nav>
 
-    <a class="call-btn" href="tel:8019039221">Call Now</a>
+<div>
+<a class="btn call" href="tel:+18019039221">Call Now</a>
+<a class="btn wa" href="https://wa.me/18019039221">WhatsApp</a>
+</div>
 </header>
 
-
-<!-- HERO SECTION -->
-<section class="hero">
-    <div class="hero-text">
-        <h1>Professional Lawn Care Services in Sandy, UT</h1>
-
-        <p>
-            Welcome to Homegrown Lawns, your trusted lawn care company in Sandy, Utah.
-            We provide lawn mowing, maintenance, weed control, sprinkler maintenance,
-            and park strip services to keep your property looking beautiful.
-        </p>
-
-        <a href="tel:8019039221" class="hero-btn">Get Free Estimate</a>
-    </div>
-
-    <div class="hero-image">
-        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=900" alt="">
-    </div>
+<!-- HERO -->
+<section class="hero" id="home">
+<h1>Professional Lawn Care in Sandy, UT</h1>
+<p>Reliable lawn mowing, maintenance, fertilization, weed control, sprinkler care and park strip services to keep your yard clean and healthy all year.</p>
+<a href="tel:+18019039221">Schedule Your Service</a>
 </section>
-
 
 <!-- ABOUT -->
 <section id="about">
-    <h2>About Us</h2>
-
-    <p>
-        Homegrown Lawns proudly serves homeowners throughout Sandy, UT.
-        Our team focuses on quality workmanship, reliability, and customer satisfaction.
-        Whether you need weekly lawn mowing or seasonal fertilization,
-        we are committed to keeping your yard healthy and attractive.
-    </p>
+<h2>About Us</h2>
+<p style="max-width:900px;margin:auto;text-align:center;">
+Homegrown Lawns is your trusted local lawn care company in Sandy, Utah. We specialize in lawn mowing, maintenance, fertilization, weed control, park strip care, and sprinkler maintenance. Our focus is consistency, detail, and long-lasting lawn health. We treat every yard like our own.
+</p>
 </section>
-
 
 <!-- SERVICES -->
 <section id="services">
-    <h2>Our Services</h2>
+<h2>Our Services</h2>
 
-    <div class="service-box">
+<div class="services">
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1598902108854-10e335adac99?w=800">
-            <h3>Lawn Mowing</h3>
-            <p>Regular lawn mowing services that keep your grass neat and healthy.</p>
-        </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1598908314732-07113901949b?auto=format&fit=crop&w=800&q=80">
+<h3>Lawn Mowing</h3>
+<p>Regular and professional mowing to keep your lawn neat, clean, and healthy.</p>
+</div>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1622383563227-04401ab4e5ea?w=800">
-            <h3>Lawn Maintenance</h3>
-            <p>Complete lawn maintenance solutions for a clean and attractive landscape.</p>
-        </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1592928302636-c83cf1f0d2b1?auto=format&fit=crop&w=800&q=80">
+<h3>Lawn Maintenance</h3>
+<p>Complete care including trimming, cleanup, and seasonal lawn treatments.</p>
+</div>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1558904541-efa843a96f01?w=800">
-            <h3>Park Strip Care</h3>
-            <p>Professional park strip maintenance to improve curb appeal.</p>
-        </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1602526218055-e6aeb3c4c8d7?auto=format&fit=crop&w=800&q=80">
+<h3>Park Strip Care</h3>
+<p>Keep your park strip clean, weed-free, and visually appealing.</p>
+</div>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1589923158776-cb4485d99fd6?w=800">
-            <h3>Fertilization & Weed Control</h3>
-            <p>Effective treatments that encourage healthy growth and reduce weeds.</p>
-        </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=800&q=80">
+<h3>Fertilization / Weed Control</h3>
+<p>Boost lawn health and eliminate weeds with professional treatments.</p>
+</div>
 
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1560749003-f4b1e17e2dff?w=800">
-            <h3>Sprinkler Maintenance</h3>
-            <p>Keep your irrigation system operating efficiently all season long.</p>
-        </div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600566752227-8f5a0c2b7a1c?auto=format&fit=crop&w=800&q=80">
+<h3>Sprinkler Maintenance</h3>
+<p>Repair and maintain sprinkler systems for perfect lawn hydration.</p>
+</div>
 
-    </div>
+</div>
 </section>
 
-
-<!-- CUSTOMER REVIEWS -->
+<!-- REVIEWS -->
 <section>
-    <h2>Customer Reviews</h2>
+<h2>Customer Reviews</h2>
+<div class="reviews">
 
-    <div class="review">
-        ⭐⭐⭐⭐⭐
-        <p>"Excellent lawn service. Always on time and very professional."</p>
-        <strong>- Michael R.</strong>
-    </div>
+<div class="review">
+⭐️⭐️⭐️⭐️⭐️
+<p>"Amazing service! My lawn has never looked better. Very professional."</p>
+<strong>- John D.</strong>
+</div>
 
-    <div class="review">
-        ⭐⭐⭐⭐⭐
-        <p>"My yard looks amazing after every visit. Highly recommended."</p>
-        <strong>- Sarah T.</strong>
-    </div>
+<div class="review">
+⭐️⭐️⭐️⭐️⭐️
+<p>"Reliable and affordable. They always show up on time."</p>
+<strong>- Sarah M.</strong>
+</div>
 
-    <div class="review">
-        ⭐⭐⭐⭐⭐
-        <p>"Great communication and affordable prices."</p>
-        <strong>- David M.</strong>
-    </div>
+<div class="review">
+⭐️⭐️⭐️⭐️⭐️
+<p>"Highly recommend Homegrown Lawns for regular maintenance."</p>
+<strong>- Mike R.</strong>
+</div>
+
+</div>
 </section>
-
-
-<!-- BLOG -->
-<section id="blog">
-    <h2>Latest Blog Topics</h2>
-
-    <ul>
-        <li>Benefits of Regular Lawn Maintenance</li>
-        <li>How Fertilization Improves Grass Health</li>
-        <li>Tips for Proper Sprinkler Maintenance</li>
-        <li>Seasonal Lawn Care Guide</li>
-    </ul>
-</section>
-
 
 <!-- FAQ -->
 <section>
-    <h2>Frequently Asked Questions</h2>
+<h2>Frequently Asked Questions</h2>
 
-    <h3>Do you provide weekly lawn mowing?</h3>
-    <p>Yes, we offer scheduled lawn mowing services.</p>
+<div class="faq">
+<h3>How often should lawn mowing be done?</h3>
+<p>Usually once a week during the growing season for best results.</p>
 
-    <h3>Do you offer weed control?</h3>
-    <p>Yes, we provide fertilization and weed control services.</p>
+<h3>Do you provide seasonal lawn care?</h3>
+<p>Yes, we offer seasonal fertilization and maintenance plans.</p>
 
-    <h3>What areas do you serve?</h3>
-    <p>We proudly serve Sandy, UT and nearby areas.</p>
-
-    <h3>Can you repair sprinkler systems?</h3>
-    <p>We provide sprinkler maintenance and system checks.</p>
+<h3>Do you repair sprinkler systems?</h3>
+<p>Yes, we handle full sprinkler inspection, repair, and maintenance.</p>
+</div>
 </section>
-
 
 <!-- CONTACT -->
 <section id="contact">
-    <h2>Contact Us</h2>
+<h2>Contact Us</h2>
 
-    <p><strong>Phone:</strong> (801) 903-9221</p>
-    <p><strong>Email:</strong> homegrownlawnsutah@gmail.com</p>
-    <p><strong>Address:</strong> 1203 E Kennelly Ave, Sandy, UT 84094, United States</p>
-    <p><strong>Hours:</strong> Mon - Fri | 8:00 AM - 5:00 PM</p>
+<div class="contact">
 
-    <a class="hero-btn"
-       href="https://maps.app.goo.gl/c32oXmtFM7tL2QiV8"
-       target="_blank">
-       View on Google Maps
-    </a>
+<p><strong>Address:</strong> 1203 E Kennelly Ave, Sandy, UT 84094</p>
+<p><strong>Phone:</strong> (801) 903-9221</p>
+<p><strong>Email:</strong> homegrownlawnsutah@gmail.com</p>
+<p><strong>Hours:</strong> Mon - Fri 8:00 AM - 5:00 PM</p>
+
+<div class="map">
+<iframe src="https://www.google.com/maps?q=1203+E+Kennelly+Ave,+Sandy,+UT+84094&output=embed"></iframe>
+</div>
+
+</div>
 </section>
-
 
 <!-- FOOTER -->
 <footer>
-
-    <div>
-        <h3>Quick Links</h3>
-        <p>Home</p>
-        <p>About Us</p>
-        <p>Services</p>
-        <p>Blog</p>
-        <p>Contact</p>
-    </div>
-
-    <div>
-        <h3>Contact Information</h3>
-        <p>1203 E Kennelly Ave, Sandy, UT 84094</p>
-        <p>(801) 903-9221</p>
-        <p>homegrownlawnsutah@gmail.com</p>
-        <p>Mon - Fri | 8 AM - 5 PM</p>
-    </div>
-
-    <br>
-
-    <p>© 2026 The Ranking Geeks. All Rights Reserved.</p>
-
+<p>Quick Links: Home | About Us | Services | Blog | Contact</p>
+<p>© 2026 The Ranking Geeks. All Rights Reserved.</p>
 </footer>
 
 </body>
